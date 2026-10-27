@@ -1,0 +1,23 @@
+system-ghc: true
+install-ghc: false
+allow-newer : true
+
+resolver: lts-24.56
+
+packages:
+- .
+- ../../../Useful
+- ../../../Clever
+
+
+extra-deps: []
+#- tardis-0.5.0
+#- smtp-mail-0.4.0.0
+#- repa-3.4.1.4
+#- repa-io-3.4.1.1
+#- sized-grid-0.2.0.1
+
+
+# flags: {}
+
+

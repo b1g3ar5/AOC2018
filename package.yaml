@@ -1,0 +1,73 @@
+name:                AOC2018
+version:             0.1.0.0
+github:              "githubuser/AOC2018"
+license:             BSD3
+author:              "Nick Straw"
+maintainer:          "nick@broxholme.com"
+copyright:           "2021 N J Straw"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/b1g3ar5/AOC2018#readme>
+
+default-extensions: GHC2021
+
+dependencies:
+- adjunctions
+- array
+- base
+- bimap
+- comonad
+- containers
+- distributive
+- fgl
+- free
+- MemoTrie
+- monad-loops
+- mtl
+- parsec
+- recursion-schemes
+- split
+- timeit
+- unordered-containers
+- vector
+- Clever
+- Useful
+- megaparsec
+- heap
+
+library:
+  source-dirs: src
+
+executables:
+  AOC2018-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O2
+    dependencies:
+    - AOC2018
+
+tests:
+  AOC2018-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O2
+    dependencies:
+    - AOC2018

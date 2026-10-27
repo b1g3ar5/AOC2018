@@ -1,0 +1,162 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.39.6.
+--
+-- see: https://github.com/sol/hpack
+
+name:           AOC2018
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/b1g3ar5/AOC2018#readme>
+homepage:       https://github.com/githubuser/AOC2018#readme
+bug-reports:    https://github.com/githubuser/AOC2018/issues
+author:         Nick Straw
+maintainer:     nick@broxholme.com
+copyright:      2021 N J Straw
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/AOC2018
+
+library
+  exposed-modules:
+      Conway
+      Day1
+      Day10
+      Day11
+      Day12
+      Day13
+      Day14
+      Day15
+      Day16
+      Day17
+      Day18
+      Day19
+      Day2
+      Day20
+      Day21
+      Day22
+      Day23
+      Day24
+      Day25
+      Day3
+      Day4
+      Day5
+      Day6
+      Day7
+      Day8
+      Day9
+      Graph
+      HeapIndexed
+      IGraph
+      Kmett
+      Lib
+      Recursion
+      Search
+      Utils
+  other-modules:
+      Paths_AOC2018
+  hs-source-dirs:
+      src
+  default-extensions:
+      GHC2021
+  build-depends:
+      Clever
+    , MemoTrie
+    , Useful
+    , adjunctions
+    , array
+    , base
+    , bimap
+    , comonad
+    , containers
+    , distributive
+    , fgl
+    , free
+    , heap
+    , megaparsec
+    , monad-loops
+    , mtl
+    , parsec
+    , recursion-schemes
+    , split
+    , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable AOC2018-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_AOC2018
+  hs-source-dirs:
+      app
+  default-extensions:
+      GHC2021
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -O2
+  build-depends:
+      AOC2018
+    , Clever
+    , MemoTrie
+    , Useful
+    , adjunctions
+    , array
+    , base
+    , bimap
+    , comonad
+    , containers
+    , distributive
+    , fgl
+    , free
+    , heap
+    , megaparsec
+    , monad-loops
+    , mtl
+    , parsec
+    , recursion-schemes
+    , split
+    , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+test-suite AOC2018-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_AOC2018
+  hs-source-dirs:
+      test
+  default-extensions:
+      GHC2021
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -O2
+  build-depends:
+      AOC2018
+    , Clever
+    , MemoTrie
+    , Useful
+    , adjunctions
+    , array
+    , base
+    , bimap
+    , comonad
+    , containers
+    , distributive
+    , fgl
+    , free
+    , heap
+    , megaparsec
+    , monad-loops
+    , mtl
+    , parsec
+    , recursion-schemes
+    , split
+    , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
